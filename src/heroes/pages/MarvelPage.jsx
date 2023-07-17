@@ -1,5 +1,5 @@
 export const MarvelPage = () => {
   return (
-    <h1>MarvelPage</h1>
+    <h1>Marvel Page</h1>
   )
 }

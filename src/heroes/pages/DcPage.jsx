@@ -1,5 +1,5 @@
-export const DcPage = () => {
+export const DCPage = () => {
   return (
-    <h1>DcPage</h1>
+    <h1>DC Page</h1>
   )
 }
