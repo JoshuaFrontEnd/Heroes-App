@@ -44,13 +44,6 @@ export const Navbar = () => {
             Search
           </NavLink>
 
-          <NavLink
-            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
-            to="/hero"
-          >
-            Hero
-          </NavLink>
-
         </nav>
         <nav className="navbar-nav">
 
