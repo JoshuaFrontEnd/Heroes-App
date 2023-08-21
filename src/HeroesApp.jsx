@@ -11,5 +11,3 @@ export const HeroesApp = () => {
     </>
   )
 }
-
-// console.log('cvxxv?');

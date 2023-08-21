@@ -1,10 +1,18 @@
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/AuthContext';
 
 export const LoginPage = () => {
 
+  // Acá estoy llamando a la propiedad 'login' pero del componenete '<AuthContext />' declarado en 'AuthProvider.jsx'
+  const { login } = useContext( AuthContext );
   const navigate = useNavigate();
 
   const onLogin = () => {
+
+    // La funcion 'login' recibe un nombre como parametro
+    login( 'Joshua Torres' );
+
     navigate('/', {
       replace: true
     });

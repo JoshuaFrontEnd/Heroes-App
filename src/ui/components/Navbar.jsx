@@ -1,6 +1,11 @@
+import { useContext } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../auth';
 
 export const Navbar = () => {
+
+  // El 'user' es obtenido desde el 'action.payload' creado en 'AuthProvider', esto es definido en 'authReducer.js'
+  const { user } = useContext( AuthContext );
 
   const navigate = useNavigate();
 
@@ -48,7 +53,8 @@ export const Navbar = () => {
         <nav className="navbar-nav">
 
           <span className='nav-item nav-link text-info me-2'>
-            Joshua
+            {/* Acá obtengo el nombre de usuario desde la propiedad 'user', y al asignar el signo de interrogación le estoy diciendo a React que si la variable viene undefined no me genere error y no pinte nada (mejor que no pinte nada a que se vea el mensaje de error), si viene con texto mostrará esa información */}
+            { user?.name }
           </span>
 
           <button
