@@ -10,10 +10,13 @@ export const LoginPage = () => {
 
   const onLogin = () => {
 
+    // Busco en el 'localStorage' la ultima ruta, si es null asigna una ruta vacia
+    const lastPath = localStorage.getItem( 'lastPath' ) || '/';
+
     // La funcion 'login' recibe un nombre como parametro
     login( 'Joshua Torres' );
 
-    navigate('/', {
+    navigate( lastPath, {
       replace: true
     });
   }
