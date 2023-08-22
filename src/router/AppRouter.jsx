@@ -7,6 +7,7 @@ import { MarvelPage, DCPage, SearchPage, HeroPage } from "../heroes";
 import { LoginPage } from "../auth/";
 import { HeroesApp } from "../HeroesApp";
 import { PrivateRoute } from "./PrivateRoute";
+import { PublicRoute } from "./PublicRoute";
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
   // Acá estoy llamando solamente al login, por eso no se muestra el 'Navbar'
   {
     path: 'login',
-    element: <LoginPage />,
+    element: <PublicRoute> <LoginPage /> </PublicRoute>,
   }
 ])
 

@@ -16,3 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </AuthProvider>
   </React.StrictMode>,
 )
+
+/*----------------------------------------------------------------
+  Siempre el AppRouter debe ir dentro de un AuthProvider
+---------------------------------------------------------------- */
