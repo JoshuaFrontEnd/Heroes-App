@@ -1,4 +1,4 @@
-¿Qué veremos en esta sección?
+Conceptos aplicados a esta App
 
 - SPA ( Single Page Application ) a profundidad
 - Diferentes temas en la misma aplicación aplicados a diferentes rutas
@@ -7,7 +7,9 @@
 - Leer argumentos por URL
 - QueryParams
 - Aplicar filtros utilizando QueryStrings
-
-En esta sección aún no haremos protección de rutas, pero dejaremos el estilo de esos componentes listos para la siguiente sección.
-
-Aquí quiero enfocarme en la funcionalidad de la aplicación suponiendo que estamos autenticados.
+- Rutas públicas
+- Rutas privadas
+- Login y logout - Sin backend aún
+- Recordar cuál fue la última ruta visitada para mejorar la experiencia de usuario.
+- Context
+- Reducer
